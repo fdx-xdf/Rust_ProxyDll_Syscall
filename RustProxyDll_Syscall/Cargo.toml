@@ -1,0 +1,19 @@
+[package]
+name = "RustProxyDll_Syscall"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 1
+debug = true
+#strip = true
+#lto = true
+
+
+[dependencies]
+winapi = { version = "0.3.9", features = ["minwindef", "ntdef", "winnt", "libloaderapi", "basetsd", "synchapi"] }
+ntapi ={version = "0.4.1"}
+#obfstr={version = "0.4.3"}
+
+
+
